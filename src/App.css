@@ -1,48 +1,58 @@
-
+.home {
+  background-image: url('./assets//image/home3.jpg');
+  background-size: cover;
+  background-position: center;
+height: 100vh;
+position: relative;
+}
 .home .header{
   display: flex;
   justify-content: space-around;
   justify-items: center;
   align-items: center;
 }
+.quoto{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  color: white;
+  padding: .5%;
+}
 .home h3{
   color: #fff;
   font-size: 20pt;
   font-family: 'Roboto';
-  /* margin-top: 3%; */
 }
-.home h2 {
+.name-heading{
   font-family: 'Roboto';
-  /* font-weight: 550; */
   font-size: 40pt;
   letter-spacing: 3px;
- 
+  position: relative;
   color: rgb(253, 247, 247);
-  /* padding-bottom: 5%; */
   text-align: center;
-  margin:0; 
   margin-top: 13%;
 }
-
 .home  .navbar  {
   margin-top: 1%;
   list-style: none;
-  margin-left: 40%;
- 
-
+  margin-left: 0%;
+ overflow: visible;
 }
 .home .navbar ul{
   display: flex;
   list-style: none;
   font-size: 120%;
+  overflow: visible;
 }
 .home .navbar li{
   margin-right: 10%;
+  overflow: visible;
 } 
 .home a {
   font-family: 'Roboto';
   color: #fff;
-  /* text-shadow: 1px 1px 7px #949494; */
   -webkit-transition: background-color 0.7s ease-out;
   -moz-transition: background-color 0.7s ease-out;
   -o-transition: background-color 0.7s ease-out;
@@ -53,53 +63,37 @@
 
 }
 .home a:hover{
-
   color: rgb(155, 151, 151);
-}
-
-.home {
-  background-image: url('./assets//image/home3.jpg');
-  background-size: cover;
-  background-position: center;
-height:100%;
-}
-
-.social a {
-  /* -webkit-transition: background-color 0.7s ease-out;
-  -moz-transition: background-color 0.7s ease-out;
-  -o-transition: background-color 0.7s ease-out;
-  transition: background-color 0.7s ease-out; */
-  /* padding: 1.9%; */
-  /* margin-left: 1%; */
-  /* border-radius: 4px; */
-  /* margin: auto; */
 }
 .social a:hover {
   background-color: rgb(56, 55, 55);
 }
 .social-link{
-  
-  font-size: 150%; 
+  font-size: 200%; 
   transition: background-color 0.7s ease-out;
   width: 50%;
   margin: auto;
   text-align: center;
   margin-top: 2%;
+  position: relative;
+}
+@keyframes homebtn {
+  from {bottom: -20%}
+  to {bottom: 10%}
 }
 .social-link a{
   text-decoration: none;
    margin-left: 2%; 
 }
-
 .home .btn {
   background: none;
   border: 3px solid rgb(248, 246, 246);
   border-radius: 5px;
-  position: absolute;
-  top:28%;
-  left: 48%;
+   position: absolute;
+   /* top: 290%; */
+  left: 48%; 
+  bottom: 10%;
   color: #fff;
-  /* font-family: 'Roboto'; */
   font-weight: 700;
   font-size: 130%;
   -webkit-transition: background-color 0.7s ease-out;
@@ -107,101 +101,111 @@ height:100%;
   -o-transition: background-color 0.7s ease-out;
   transition: background-color 0.7s ease-out;
   padding: 8px 16px 8px 16px;
-  
+   animation: homebtn 2s; 
 }
-
 .home .btn:hover {
   background-color: rgb(209, 205, 205);
   color: #4d4c4c;
 }
 .skills {
-  background-color:rgb(32, 32, 32);
-  /* padding-bottom: 5%; */
-  -webkit-box-shadow: inset 0 15px 10px -9px #787878;
-  box-shadow: inset 0 15px 10px -9px #4d4c4c;
-height:100%;
- 
+  
+  background-color:#1d201f;
+  background-color:#141414;
+  
 }
-
-.skills hr {
+.heading {
+  font-weight: 400;
+  color: white;
+  padding-top: 5%;
+   font-family: 'Roboto';
+  margin: 0;
+  text-align: center;
+}
+ hr {
   width: 12%;
   height: 2px;
   background-color: rgb(102, 101, 101);
-}
-.sk-head {
- 
-  font-weight: 400;
-  color: white;
-  padding-top: 5%;
-   font-family: 'Roboto';
-  margin: 0;
-  text-align: center;
+  margin-bottom: 4%;
 }
 .interest{
   margin-top: 5%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.skills img {
-  height: 150px;
- margin:auto 3%;
- margin-bottom: 6%;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+  padding: 5%;
 }
 
+.skills .img {
+  height: 150px;
+  overflow: visible;
+  /* margin: auto 18% 28% 18%  ; */
+  margin-bottom: 10%;
+ 
+
+}
 .about {
-  background-color: rgb(17, 41, 122);
+  background-color: #2292a4;
+  background-color: #3d3336;
+
   -webkit-box-shadow: 0 15px 10px -9px #787878;
   box-shadow:  0 15px 10px -9px #787878;
-height:100%;
+ height:100vh
  
 }
-.me-about{
-  font-weight: 400;
-  color: white;
-  padding-top: 5%;
-   font-family: 'Roboto';
-   text-align: center;
-   margin: 0;
-}
 .about-me{
-  display: flex;
-  align-items: center;
-  justify-items: center;
+ display: grid;
+ grid-template-columns: 30% 70%;
+ overflow: visible;
 }
-.about-me> img {
-  margin: 3% 10%;
-border-radius: 10px;
+.about-me  .img {
+  margin-top: 10% ;
+  margin-left: 15%;
+border-radius: 50%;
   height: 40vh;
-  width: 20%;
+  /* max-width: 20%; */
+  overflow: visible;
 }
-.c-hd{
+/* .c-hd{
   margin: 0;
   text-align: center;
-}
+} */
 .me-desc {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+   'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(173, 172, 172);
-  font-size: 140%;
+  font-size: 120%;
   width: 80%;
   letter-spacing: 3px;
 }
 .hello {
-  margin-top: 5%;
+  
   margin-bottom: 5%;
   color: white;
 }
-.about hr {
-  width: 10%;
-  height: 2px;
-  background-color: #CECECE;
-  border-top: 0px;
+.education{
+  background-color: #161925;
+  overflow-y: hidden;
 }
-.contact {
+.card{
+  width: 45%;
+  margin:auto;
+  padding: 1% 5%;
+  margin-bottom: 3%;
+  background-color: rgb(238, 238, 238);
+}
+ .one{
+  border-bottom: 3px solid red;
+}
+ .two{
+  border-bottom: 3px solid rgb(2, 66, 109)
+}
+.three{
+  border-bottom: 3px solid rgb(187, 190, 9);
+}
+/* .contact {
   background-color: rgb(10, 10, 10);
   -webkit-box-shadow:  0 15px 10px -9px #787878;
   box-shadow:  0 15px 10px -9px #787878;
-height:100%;
  
 }
 .get-touch{
@@ -223,7 +227,7 @@ height:100%;
   color: #fff;
   padding:2%;
   border: 1px solid rgb(161, 159, 159) !important;
-  /* margin: 4% 2% 4% 5%;  */
+ margin: 4% 2% 4% 5%;  
   width: 90%;
   font-size: 100%;
   margin-left: 3%;
@@ -243,7 +247,7 @@ height:100%;
   color: #fff;
   padding:2%;
   border: 1px solid rgb(161, 159, 159) !important;
-  /* margin: 4% 2% 4% 5%;  */
+
   width: 94.5%;
   font-size: 100%;
   margin-left: 3%;
@@ -254,319 +258,244 @@ height:100%;
   height: 2px;
   background-color: #CECECE;
   border-top: 0px;
-}
+} */
 
 @media (max-width: 1224px) {
   .navbar {
       display: none;
+      
   }
+  
   .toggle_button{
     position: fixed;
-    top: 0.8%;
+    top: 3%;
     right: 2%;
+    z-index: 111111111111;
 }
-
 }
 @media (min-width: 1223px) {
   .toggle_button{
       display: none;
   }
 }
-  
- 
 @media screen and (max-width: 768px){
   
-  .section{
-    background-color: rgb(34, 5, 80);
-    /* max-height: 540px !important ; */
+  .home{
+    height: 65vh;
+   
+  }
+  .social-link{
+    margin-top: 8%;
+  }
+  .social-link a {
+    margin: auto 3%;
   }
   .home .header{
-    margin-left: 4%;
+    margin-left: 5%;
     justify-content: start;
   }
   .home h3{
     
     margin-top: 5%;
   }
-  .home h2 {
+  hr {
+    width: 16%;
+  }
+  .name-heading {
     font-weight: 500;
     font-size: 40pt;
-    margin-top: 16%;
-   
+    margin-top: 24%;
   }
+  
   .home .btn{
-    top:16%;
     left: 48%;
     padding: 5px 15px 5px 15px;
     font-size: 220%;
+    box-sizing: content-box;
   }
-  .skills img {
-    height: 120px;
-    margin-bottom: 4%;
+  .quoto{
+    width: 70%;
+  }
+  
+ 
+  .skills .img {
+    height: 100px;
+    overflow: visible;
+    /* margin: auto 18% 28% 18%  ; */
+    margin-bottom: 10%;
+    margin-left: 5%;
+   
   
   }
   
-  
-
-  /* .skills img {
-    height: 150vh;
-   margin:auto 3%;
-  } */
   h2 {
     padding-top: 0%;
     margin-top:0;
     text-align: center;
   }
-  .interest{
-    margin-top: 5%;
-    justify-content: space-around;
-    flex-wrap: none;
-  }
- 
-  .skills hr {
-   margin: px;
-  }
+  
+  
   .about-me{
-    display: flex;
-    
+    grid-template-columns: 100%;
   }
-  .about-me> img {
-    margin: 3%;
-  border-radius: 10px;
+  .about-me  .img {
+    margin: 3% 38%;
+  border-radius: 50%;
     height: 20vh;
-    width: 25%;
   }
   .me-about{
-   
-    padding-top: 3%;
-    
-  }
-  .me-desc {
-  font-size: 100%;
-  width: 100%;
-  letter-spacing: 1px;;
-}
-.hello {
-  font-size: 140%;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-.contact .input {
-  margin-top: 1%;
-  /* margin-right: 5%; */
-}
-.contact .input,
-.textarea {
-  padding:1%;
-  border: 1px solid rgb(161, 159, 159) !important;
-  margin: 1%; 
-  width: 90%;
-  margin-left: 3%;
-}
-
-.get-touch{
-margin-top: 2%;
-  width: 90%;
-}
-.c-hd {
- padding-top:2% ;
-}
-
-}
-@media screen and (max-width: 740px) , screen and (max-height: 360px){
-  .home h2 {
-    font-weight: 500;
-    font-size: 30pt;
-    margin-top: 5%;
-   
-  }
-  .home .btn{
-    top:25%;
-    left: 48%;
-    padding: 4px 8px 4px 8px;
-  }
-  .skills img {
-    height: 100px;
-  }
- 
-  h2 {
-    padding-top: 0%;
-    margin-top:0;
+    padding-top: 6%;  
     text-align: center;
   }
-  .interest{
-    margin-top: 0%;
-    justify-content: space-around;
-    flex-wrap: none;
-    margin-top: 2%;
-  }
-  .skills hr {
-   margin: px;
-  }
-  .about-me{
-    display: flex;
-  }
-  .about-me> img {
-    margin: 3%;
-  border-radius: 10px;
-    height: 40vh;
-    width: 25%;
-  }
-  .me-about{
-    padding-top: 3%;   
-  }
   .me-desc {
   font-size: 100%;
   width: 100%;
-  letter-spacing: 1px;;
-}
-.hello {
-  font-size: 140%;
-  text-align: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-.contact .input,
-.textarea {
-  padding:1%;
-  border: 1px solid rgb(161, 159, 159) !important;
-  margin: 1%; 
-  width: 90%;
-  margin-left: 3%;
-  margin-top: 2%;
-}
-.submit{
-  margin-top: 2%;
-  background-color: rgb(103, 155, 6);
-  width: 92.7%;
-}
-.get-touch{
-margin-top: 2%;
-  width: 70%;
-}
-.c-hd {
- padding-top:2% ;
-}
-
-}
-@media(max-width: 480px){
-  .section{
-    background-color: rgb(34, 5, 80);
-    }
-  .home{
-  }
-  .home h2 {
-    font-weight: 500;
-    font-size: 25pt;
-    margin-top: 40%;
-
-  }
-  .home .btn{
-    top:24%;
-    left: 48%;
-    padding: 4px 10ox 4px 10px
-  }
- 
-  .skills img {
-    height: 100px;
-   margin:auto 3%;
-  }
-  .interest{
-    margin-top: 5%;
-    justify-content: space-around;
-    flex-wrap: none;
-  }
-  .about-me{
-    display: flex;
-    flex-direction: column;
-  }
-  .about-me> img {
-    margin: 3% 10%;
-  border-radius: 4px;
-    height: 20vh;
-    width: 60%;
-  }
-
-  .me-desc {
-  font-size: 100%;
-  width: 100%;
-  letter-spacing: 3px;
-  padding-left:  2%;
-}
-.hello {
-  font-size: 120%;
-  text-align: center;
-}
-.get-touch{
-/* margin-top: 20%; */
-  width: 90%;
-}
-
-.contact .input,
-.textarea {
-  /* margin-top: 4%; */
+  letter-spacing: 1px;
   padding: 3%;
 }
-.submit{
-  /* margin-top: 2%; */
-  padding: 2%;
- /* height:  5vh; */
+.hello {
+  font-size: 140%;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+.card{
+  width: 80%;
 }
-@media(max-width: 300px){
-  
-  .section{
-    background-color: rgb(34, 5, 80);
-    /* max-height: 540px !important ; */
+
+}
+@media screen and (max-width: 740px) and (max-height: 400px){
+  .social-link{
+    display: none;
   }
   .home{
-    /* height:80% */
+    height: 100vh;
   }
-  .home h2 {
+  .name-heading {
     font-weight: 500;
-    font-size: 20pt;
-    margin-top: 50%;
-
+    font-size: 35pt;
+    margin-top: 1%;
+  }
+  .home h3{
+    margin-top: 1%;
   }
   .home .btn{
-    left: 44%;
+  bottom: 15%;
   }
-  
-  .skills img {
-    height: 70px;
-   margin:auto 3%;
+  .about{
+    
+  height: inherit;
+}
+  .about-me  .img {
+    margin: 3% 38%;
+  border-radius: 50%;
+    height:40vh;
   }
-  
-  .interest{
+}
+@media screen and (max-width: 480px){
+
+  .home{
+    height: 100vh;
+   
+  }
+  .home .header{
+    margin-left: 5%;
+    justify-content: start;
+  }
+  .home h3{
+    
     margin-top: 5%;
-    justify-content: space-around;
-    flex-wrap: none;
+  }
+  .name-heading {
+    font-weight: 500;
+    font-size: 30pt;
+    margin-top: 34%;
+  }
+  hr{
+    width: 25%;
+    margin-bottom: 15%;
+  }
+  .hr{
+    margin-bottom: 5%;
+    color: red;
+  }
+  .quoto{
+    width: 90%;
+    padding: .5%;
+  }
+  .home .btn{
+    left: 45%;
+    padding: 5px 15px 5px 15px;
+    font-size: 220%;
+    box-sizing: content-box;
+  }
+  
+  .skills .img {
+    height: 90px;
+    margin-bottom: 20%;
+  
+  }
+  h2 {
+    padding-top: 0%;
+    margin-top:0;
+    text-align: center;
   }
   .about-me{
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 100%;
   }
-  .about-me> img {
-    margin: 3% 10%;
-  border-radius: 4px;
-    height: 20vh;
-    width: 60%;
+  .about-me  .img {
+    margin: 3% 29%;
+  border-radius: 50%;
+    height: 25vh;
   }
-
+  .me-about{
+    padding-top: 6%;  
+    text-align: center;
+  }
   .me-desc {
-  font-size: 60%;
+  font-size: 100%;
   width: 100%;
-  letter-spacing: 3px;
-  padding-left:  2%;
+  letter-spacing: 1px;
+  padding: 3%;
 }
 .hello {
-  font-size: 120%;
+  font-size: 140%;
   text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-.get-touch{
-/* margin-top: 20%; */
+.card{
   width: 90%;
+  margin-bottom: 8%;
+
+}
+.edu{
+  margin-top: 8%;
 }
 
+}
+#button{
+  z-index: 111111111111;
+}
+@media screen and (max-width: 375px){
+  .name-heading {
+    font-weight: 500;
+    font-size: 20pt;
+    margin-top: 34%;
+  }
+  .quoto{
+    width: 90%;
+    padding: .5%;
+    font-size: 100%;
+  }
+  .social-link{
+    font-size: 150%;
+
+  }
+  .about{
+    height: inherit;
+  }
+  .home .btn{
+       bottom: 18%;
+  }
 }
