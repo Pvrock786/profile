@@ -73,7 +73,7 @@ class App extends Component {
 			  {backdrop}
 			  <ScrollAnimation animateIn="fadeInDown" duration = {3}  animateOnce={true}>
 		  <h2 className="name-heading">Praveen  Shukla </h2>
-		  <h4 className="quoto"> I'm here to to create beautiful design , that makes diffrence</h4>
+		  <h4 className="quoto"> I'm here to to create beautiful design , that makes difference</h4>
 		  </ScrollAnimation>
 		  <ScrollAnimation animateIn="fadeInLeft" duration = {3}  animateOnce={true} >
 	  <div className="social-link">
